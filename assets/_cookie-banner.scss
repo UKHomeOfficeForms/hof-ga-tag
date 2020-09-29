@@ -1,1 +1,53 @@
 // Placeholder for future CSS
+
+#global-cookie-message {
+  background: $panel-colour;
+  padding: 0;
+}
+
+#cookie-banner {
+  max-width: 960px;
+  margin: 0 15px;
+  p {
+    margin: 0;
+  }
+  .column-two-thirds {
+    padding: 0;
+  }
+  .heading-medium {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.2;
+    display: block;
+    margin: 0.5em 0;
+  }
+  #cookie-banner-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    .button {
+      flex-grow: 1;
+      margin: 0 15px 15px 0;
+    }
+  }
+  @media (min-width: 641px) {
+    margin: 0 30px;
+    .heading-medium {
+      font-size: 24px;
+      line-height: 1.25;
+      margin: 0.83333em 0;
+    }
+    #cookie-banner-actions {
+      .button {
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+  @media (min-width: 1020px) {
+    margin: 0 auto;
+  }
+}
