@@ -1,0 +1,19 @@
+{
+    "name": "hof-ga-tag",
+    "version": "1.0.0",
+    "description": "Library for adding in Google Analytics page tagging into HOF",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/UKHomeOffice/hof-ga-tag.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/UKHomeOffice/hof-ga-tag/issues"
+    },
+    "homepage": "https://github.com/UKHomeOffice/hof-ga-tag#readme"
+}
