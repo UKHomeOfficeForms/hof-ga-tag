@@ -4,7 +4,7 @@
     "description": "Library for adding in Google Analytics page tagging into HOF",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest"
     },
     "repository": {
         "type": "git",
@@ -15,5 +15,14 @@
     "bugs": {
         "url": "https://github.com/UKHomeOffice/hof-ga-tag/issues"
     },
-    "homepage": "https://github.com/UKHomeOffice/hof-ga-tag#readme"
+    "homepage": "https://github.com/UKHomeOffice/hof-ga-tag#readme",
+    "devDependencies": {
+        "@types/jest": "^26.0.14",
+        "jest": "^26.4.2"
+    },
+    "files": [
+        "assets",
+        "views",
+        "index.js"
+    ]
 }
