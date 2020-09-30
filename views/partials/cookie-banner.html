@@ -1,11 +1,19 @@
 <div id="cookie-banner" class="grid-row">
     <div class="column-two-thirds">
-        <p class="heading-medium">Can we store analytics cookies on your device?</p>
-        <p>Analytics cookies help us understand how our website is being used.</p>
+        <p class="heading-medium js-enabled">Can we store analytics cookies on your device?</p>
+        <p class="js-enabled">Analytics cookies help us understand how our website is being used.</p>
+        <!--Non-javascript fallback content-->
+        <p class="heading-medium js-disabled">Tell us whether you accept cookies</p>
+        <p class="js-disabled">
+            We use cookies to collect information about how you use GOV.UK.
+            We use this information to make the website work as well as possible and improve government services.
+        </p>
     </div>
     <div id="cookie-banner-actions" class="column-two-thirds">
-        <button class="button">Yes</button>
-        <button class="button">No</button>
-        <a href="/cookies">How we use cookies</a>
+        <button class="button js-enabled">Yes</button>
+        <button class="button js-enabled">No</button>
+        <a href="/cookies" class="js-enabled">How we use cookies</a>
+        <!--Non-javascript fallback content-->
+        <a href="/cookies" role="button" class="button js-disabled">Set cookie preferences</a>
     </div>
 </div>

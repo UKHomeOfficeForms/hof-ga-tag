@@ -1,6 +1,9 @@
 #global-cookie-message {
   background: $panel-colour;
   padding: 0;
+  .js-enabled {
+    display: none;
+  }
 }
 
 #cookie-banner {
@@ -24,7 +27,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 15px 0;
-    .button {
+    button {
       flex-grow: 1;
       margin: 0 15px 15px 0;
     }
