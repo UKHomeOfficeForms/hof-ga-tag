@@ -26,7 +26,7 @@ describe('ga-tag', () => {
       expect(bannerContainer.style.display).toEqual('block');
     });
 
-    test('it should hide banner container if present without cookie banner (i.e. on pages outside HOF sub apps)', () => {
+    test('it should hide banner container if present without cookie banner', () => {
       bannerContainer.removeChild(cookieBanner);
       gaTag.initialiseCookieBanner();
       expect(bannerContainer.style.display).toEqual('none');

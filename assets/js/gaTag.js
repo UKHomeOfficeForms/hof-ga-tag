@@ -16,7 +16,7 @@ function showInteractiveContent() {
 
 function initialiseCookieBanner() {
   var bannerContainer = document.getElementById("global-cookie-message"); // the default cookie message container from hof-govuk-template
-  var cookieBanner    = document.getElementById("cookie-banner");         // the cookie banner that will fill replace the container's default content if using this package
+  var cookieBanner    = document.getElementById("cookie-banner");         // the cookie banner that will replace the container's default content if using this package
 
   if (bannerContainer !== null && cookieBanner !== null) {
     hideFallbackContent();
@@ -24,7 +24,7 @@ function initialiseCookieBanner() {
     bannerContainer.style.display = 'block';
   }
 
-  // hide default cookie message on pages not in HOF sub apps
+  // hide default cookie message if banner has not been added properly e.g. not used in common layout.html file
   if (bannerContainer !== null && cookieBanner === null) {
     bannerContainer.style.display = 'none';
   }
